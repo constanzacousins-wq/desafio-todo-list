@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-container">
+
+        <h1>Todo List</h1>
+
+        <hr>
+
+        <label for="nuevaTarea">Nueva tarea</label>
+
+        <div class="agregar-tarea">
+
+            <input
+                type="text"
+                id="nuevaTarea"
+                placeholder="Escribe una nueva tarea"
+            >
+
+            <button id="btnAgregar">
+                Agregar
+            </button>
+
+        </div>
+
+
+        <div class="contenido">
+
+            <!-- RESUMEN -->
+
+            <div class="resumen">
+
+                <p>
+                    Total:
+                    <strong id="totalTareas">0</strong>
+                </p>
+
+                <p>
+                    Realizadas:
+                    <strong id="tareasRealizadas">0</strong>
+                </p>
+
+            </div>
+
+
+            <!-- LISTA DE TAREAS -->
+
+            <div class="lista">
+
+                <div class="encabezado">
+
+                    <strong>ID</strong>
+
+                    <strong>Tarea</strong>
+
+                    <strong>Realizada</strong>
+
+                    <strong>Eliminar</strong>
+
+                </div>
+
+
+                <div id="listaTareas"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
